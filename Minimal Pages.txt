@@ -1,0 +1,99 @@
+Item Minimal page
+
+<%@ page contentType="text/html;charset=UTF-8" %>
+<html>
+<head>
+    <title>Items</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-4">
+    <h2 class="text-primary">Item Management</h2>
+    <form class="mb-3">
+        <div class="mb-2">
+            <label class="form-label">Item Name</label>
+            <input type="text" class="form-control" name="itemName">
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Price</label>
+            <input type="number" class="form-control" name="price">
+        </div>
+        <button type="submit" class="btn btn-success">Add Item</button>
+    </form>
+</body>
+</html>
+
+
+Customer Minimal page
+
+<%@ page contentType="text/html;charset=UTF-8" %>
+<html>
+<head>
+    <title>Customers</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-4">
+    <h2 class="text-primary">Customer Management</h2>
+    <form class="mb-3">
+        <div class="mb-2">
+            <label class="form-label">Full Name</label>
+            <input type="text" class="form-control" name="name">
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Email</label>
+            <input type="email" class="form-control" name="email">
+        </div>
+        <button type="submit" class="btn btn-success">Add Customer</button>
+    </form>
+</body>
+</html>
+
+Purchase Minimal page
+
+<%@ page contentType="text/html;charset=UTF-8" %>
+<html>
+<head>
+    <title>Purchases</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-4">
+    <h2 class="text-primary">Purchase Entry</h2>
+    <form class="mb-3">
+        <div class="mb-2">
+            <label class="form-label">Item ID</label>
+            <input type="number" class="form-control" name="itemId">
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Quantity</label>
+            <input type="number" class="form-control" name="quantity">
+        </div>
+        <button type="submit" class="btn btn-success">Record Purchase</button>
+    </form>
+</body>
+</html>
+
+Sale Minimal page
+
+<html>
+<head>
+    <title>Sales</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="container mt-4">
+    <h2 class="text-primary">Sales Transaction</h2>
+    <form class="mb-3">
+        <div class="mb-2">
+            <label class="form-label">Customer ID</label>
+            <input type="number" class="form-control" name="customerId">
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Item ID</label>
+            <input type="number" class="form-control" name="itemId">
+        </div>
+        <div class="mb-2">
+            <label class="form-label">Quantity</label>
+            <input type="number" class="form-control" name="quantity">
+        </div>
+        <button type="submit" class="btn btn-success">Process Sale</button>
+    </form>
+</body>
+</html>
