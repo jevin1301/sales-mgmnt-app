@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Purchase Entry - Car Sales Management System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-image: url('https://images.unsplash.com/photo-1571127230649-ebec7560ff3b?auto=format&fit=crop&w=1470&q=80');
+      background-size: cover;
+      background-position: center;
+      color: #fff;
+    }
+    .form-container {
+      background: rgba(0, 0, 0, 0.75);
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 4rem;
+    }
+    label {
+      color: #f0f0f0;
+    }
+    .form-control, .form-select {
+      background-color: #f8f9fa;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 form-container">
+      <h2 class="text-center mb-4">Purchase Entry</h2>
+
+      <form>
+        <div class="row mb-3">
+          <div class="col">
+            <label for="purchaseId" class="form-label">Purchase ID</label>
+            <input type="text" class="form-control" id="purchaseId" placeholder="e.g. P001">
+          </div>
+          <div class="col">
+            <label for="customerId" class="form-label">Customer ID</label>
+            <input type="text" class="form-control" id="customerId" placeholder="e.g. CUST001">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <label for="carModel" class="form-label">Car Model</label>
+            <select class="form-select" id="carModel">
+              <option selected disabled>Select a car</option>
+              <option value="toyota-vitz">Toyota Vitz (New)</option>
+              <option value="nissan-xtrail">Nissan X-Trail (Used)</option>
+              <option value="honda-civic">Honda Civic (New)</option>
+              <option value="mazda-demio">Mazda Demio (Used)</option>
+            </select>
+          </div>
+          <div class="col">
+            <label for="paymentMethod" class="form-label">Payment Method</label>
+            <select class="form-select" id="paymentMethod">
+              <option selected disabled>Choose...</option>
+              <option value="cash">Cash</option>
+              <option value="card">Credit/Debit Card</option>
+              <option value="bank">Bank Transfer</option>
+              <option value="installment">Installment Plan</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <label for="amount" class="form-label">Total Amount (MUR)</label>
+            <input type="number" class="form-control" id="amount" placeholder="e.g. 450,000">
+          </div>
+          <div class="col">
+            <label for="purchaseDate" class="form-label">Date of Purchase</label>
+            <input type="date" class="form-control" id="purchaseDate">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary w-100">Save Purchase</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+

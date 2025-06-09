@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sales Transaction - Car Sales Management System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f0f0f0;
+      color: #333;
+    }
+    .form-container {
+      background: #ffffff;
+      padding: 2rem;
+      border-radius: 10px;
+      margin-top: 4rem;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    label {
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="row justify-content-center">
+    <div class="col-md-8 form-container">
+      <h2 class="text-center mb-4">Sales Transaction</h2>
+
+      <form>
+        <div class="row mb-3">
+          <div class="col">
+            <label for="salesId" class="form-label">Sales ID</label>
+            <input type="text" class="form-control" id="salesId" placeholder="e.g. S001">
+          </div>
+          <div class="col">
+            <label for="purchaseId" class="form-label">Purchase ID</label>
+            <input type="text" class="form-control" id="purchaseId" placeholder="e.g. P001">
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <label for="salesRep" class="form-label">Sales Representative</label>
+            <input type="text" class="form-control" id="salesRep" placeholder="e.g. John Doe">
+          </div>
+          <div class="col">
+            <label for="paymentStatus" class="form-label">Payment Status</label>
+            <select class="form-select" id="paymentStatus">
+              <option selected disabled>Select Status</option>
+              <option value="paid">Paid</option>
+              <option value="pending">Pending</option>
+              <option value="installment">Installment</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="row mb-3">
+          <div class="col">
+            <label for="transactionDate" class="form-label">Transaction Date</label>
+            <input type="date" class="form-control" id="transactionDate">
+          </div>
+          <div class="col">
+            <label for="totalAmount" class="form-label">Total Amount (MUR)</label>
+            <input type="number" class="form-control" id="totalAmount" placeholder="e.g. 500000">
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">Record Sale</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+
+
